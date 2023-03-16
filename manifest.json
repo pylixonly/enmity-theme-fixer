@@ -1,11 +1,11 @@
 {
-   "name": "SilentTyping",
+   "name": "ThemeFixer",
    "version": "1.0.0",
-   "description": "Silences your typing indicator.",
+   "description": "Workaround for light/AMOLED theme bug introduced by Enmity.",
    "authors": [
       {
-         "name": "eternal",
-         "id": "263689920210534400"
+         "name": "pylix",
+         "id": "492949202121261067"
       }
    ]
 }

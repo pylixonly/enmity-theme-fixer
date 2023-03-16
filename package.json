@@ -1,9 +1,7 @@
 {
-   "name": "plugin-template",
-   "description": "Template for enmity plugins.",
    "version": "1.0.0",
    "license": "GPL-3.0",
-   "author": "Zoey & eternal",
+   "author": "amsyarasyiq",
    "scripts": {
       "build": "rollup -c --configPlugin esbuild"
    },
