@@ -19,13 +19,13 @@ const ThemeFixer: Plugin = {
          try {
             ThemeManager.overrideTheme(ThemeStore.theme ?? "dark");
             AMOLEDTheme.setAMOLEDThemeEnabled(UnsyncedUserSettingsStore.useAMOLEDTheme === 2);
-            FluxDispatcher.unsubscribe("I18N_LOAD_START", overrideTheme);
+            FluxDispatcher.unsubscribe("I18N_LOAD_SUCCESS", overrideTheme);
          } catch (e) {
             console.error("An error occurred while trying to override theme:\n" + e?.stack ?? e);
          }
       };
 
-      FluxDispatcher.subscribe("I18N_LOAD_START", overrideTheme);
+      FluxDispatcher.subscribe("I18N_LOAD_SUCCESS", overrideTheme);
    },
 
    onStop() { }
